@@ -15,6 +15,7 @@
 		669678D4277C10E200F14AB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 669678D2277C10E200F14AB6 /* LaunchScreen.storyboard */; };
 		669678DF277C10E300F14AB6 /* SwiftUIKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669678DE277C10E300F14AB6 /* SwiftUIKitTests.swift */; };
 		669678EA277C10E300F14AB6 /* SwiftUIKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669678E9277C10E300F14AB6 /* SwiftUIKitUITests.swift */; };
+		669678F8277C12B300F14AB6 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669678F7277C12B300F14AB6 /* TestView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		669678E5277C10E300F14AB6 /* SwiftUIKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		669678E9277C10E300F14AB6 /* SwiftUIKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIKitUITests.swift; sourceTree = "<group>"; };
 		669678EB277C10E300F14AB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		669678F7277C12B300F14AB6 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				669678D0277C10E200F14AB6 /* Assets.xcassets */,
 				669678D2277C10E200F14AB6 /* LaunchScreen.storyboard */,
 				669678D5277C10E200F14AB6 /* Info.plist */,
+				669678F7277C12B300F14AB6 /* TestView.swift */,
 			);
 			path = SwiftUIKit;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				669678F8277C12B300F14AB6 /* TestView.swift in Sources */,
 				669678CC277C10E000F14AB6 /* ViewController.swift in Sources */,
 				669678C8277C10E000F14AB6 /* AppDelegate.swift in Sources */,
 				669678CA277C10E000F14AB6 /* SceneDelegate.swift in Sources */,
