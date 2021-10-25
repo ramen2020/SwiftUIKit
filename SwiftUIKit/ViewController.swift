@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    @IBAction func SwiftUIButtonTapped(_ sender: Any) {
+    @IBAction func swiftUIButtonTapped(_ sender: Any) {
         print(":::: swiftUIの画面へ遷移")
         let vc = UIHostingController(rootView: TestView())
         self.present(vc, animated: true)

@@ -26,7 +26,7 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <action selector="SwiftUIButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OQG-MY-aNj"/>
+                                    <action selector="swiftUIButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OQG-MY-aNj"/>
                                 </connections>
                             </button>
                         </subviews>
