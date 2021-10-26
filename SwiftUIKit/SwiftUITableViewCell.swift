@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-class HostingTableViewCell<Content: View>: UITableViewCell {
+class SwiftUITableViewCell<Content: View>: UITableViewCell {
 
     private weak var controller: UIHostingController<Content>?
 

@@ -8,7 +8,7 @@
 import UIKit
 import SwiftUI
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
 
@@ -18,7 +18,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.delegate = self
         tableView.dataSource = self
     }
-    
+
+    @IBAction func swiftUIButtonTapped(_ sender: Any) {
+        print(":::: swiftUIの画面へ遷移")
+        let vc = UIHostingController(rootView: TestView())
+        self.present(vc, animated: true)
+    }
+
+}
+
+// MARK: TableView
+extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: .default, reuseIdentifier: "Cell")
         let view = TestView()
@@ -39,12 +49,4 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
     }
-
-    @IBAction func swiftUIButtonTapped(_ sender: Any) {
-        print(":::: swiftUIの画面へ遷移")
-        let vc = UIHostingController(rootView: TestView())
-        self.present(vc, animated: true)
-    }
-
 }
-
