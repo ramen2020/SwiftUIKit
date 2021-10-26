@@ -8,11 +8,36 @@
 import UIKit
 import SwiftUI
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    @IBOutlet weak var tableView: UITableView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        tableView.delegate = self
+        tableView.dataSource = self
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell(style: .default, reuseIdentifier: "Cell")
+        let view = TestView()
+        let hostingController = UIHostingController(rootView: view)
+        cell.contentView.addSubview(hostingController.view)
+
+        hostingController.view.translatesAutoresizingMaskIntoConstraints = false
+        hostingController.view.heightAnchor.constraint(equalToConstant: 0).isActive = true
+        hostingController.view.bottomAnchor.constraint(equalTo: cell.bottomAnchor, constant: 0).isActive = true
+        hostingController.view.topAnchor.constraint(equalTo: cell.topAnchor, constant: 0).isActive = true
+        hostingController.view.leftAnchor.constraint(equalTo: cell.leftAnchor, constant: 0).isActive = true
+        hostingController.view.rightAnchor.constraint(equalTo: cell.rightAnchor, constant: 0).isActive = true
+        hostingController.view.centerYAnchor.constraint(equalTo: cell.centerYAnchor).isActive = true
+        cell.selectionStyle = .none
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
     }
 
     @IBAction func swiftUIButtonTapped(_ sender: Any) {

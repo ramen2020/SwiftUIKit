@@ -106,12 +106,12 @@
 				669678C7277C10E000F14AB6 /* AppDelegate.swift */,
 				669678C9277C10E000F14AB6 /* SceneDelegate.swift */,
 				669678CB277C10E000F14AB6 /* ViewController.swift */,
+				669678F7277C12B300F14AB6 /* TestView.swift */,
+				669678F9277C156300F14AB6 /* SwiftUITableViewCell.swift */,
 				669678CD277C10E000F14AB6 /* Main.storyboard */,
 				669678D0277C10E200F14AB6 /* Assets.xcassets */,
 				669678D2277C10E200F14AB6 /* LaunchScreen.storyboard */,
 				669678D5277C10E200F14AB6 /* Info.plist */,
-				669678F7277C12B300F14AB6 /* TestView.swift */,
-				669678F9277C156300F14AB6 /* SwiftUITableViewCell.swift */,
 			);
 			path = SwiftUIKit;
 			sourceTree = "<group>";
